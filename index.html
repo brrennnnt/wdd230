@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Brent Rothlisberger - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development Brent Rothlisberger course assignment portal">
+    <meta name="author" content="Brent Rothlisberger">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
 </head>
 <body>
     <header>
-        <a href="week01/holygrail.html">Week 1</nav>
-            <a href="week01/media-query.html">Week 1</nav>
+        <img src="styles/images/profile-min.jpg" alt="profile image" width="50" height="75">
+        <h1>Brent Rothlisberger</h1>
     </header>
+    <nav>
+        <ul>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Wdd 230: Web Frontend Development</h2>
+        <section class="card">
+            <h3>Learning Activities</h3>
+            <ul>
+                <li>
+                    <a></a>
+                </li>
+            </ul>
+        </section>
+        <section class="card">
+            <h3>Information</h3>
+            <h4>Weather</h4>
+            <h4>number of visits</h4>
+        </section>
+    </main>
+    <footer>
+        <p id="currentYear">&copy;2023 <span id="currentYear"></span> - Brent Rothlisberger - USA - <img src="styles/images/usa-flag-min.jpg" alt="usa flag" width="35" height="22"></p>
+        <p id="lastModified">Last modified: <span id="modifiedDate"></span></p>
+    </footer>
+    <script src="scripts/getDates.js" defer></script>
 </body>
 </html>

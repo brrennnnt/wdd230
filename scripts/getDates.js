@@ -1,0 +1,1 @@
+/*current year alert and timestamp */
