@@ -29,6 +29,9 @@ nav {
 ul {
     list-style-type: none;
 }
+li a {
+    display: block;
+}
 nav a {
     display: block;
     color: #fff;
