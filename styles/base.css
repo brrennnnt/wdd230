@@ -46,12 +46,12 @@ nav .active {
     background-color: rgba(0,0,0, 0.3);
 }
 main {
-    background-color: #eeebd3;
+    background-color: #EDF2F4;
 }
 main h2 {
     text-decoration: underline;
     text-align: center;
-    color: #8d91c7;
+    color: black;
 }
 main section {
     text-decoration: none;
