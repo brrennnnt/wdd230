@@ -1,0 +1,91 @@
+/*
+  --primary-color: #DE1A1A   ;
+  --secondary-color: #EDF2F4 ;
+  --accent1-color: #0E1116;
+  --accent2-color: #A6ADB5;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background: #de1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fff;
+}
+header img {
+    margin: 25px;
+}
+nav {
+    background-color: #EDF2F4;
+    margin: 0 auto;
+}
+ul {
+    list-style-type: none;
+}
+li a {
+    display: block;
+}
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: rgba(240, 0, 0, 0.2);
+}
+nav .active {
+    background-color: rgba(0,0,0, 0.3);
+}
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+#hero-box {
+    grid-column: 2/3;
+}
+#hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 25%;
+    padding: 25px;
+}
+.button-box {
+    text-align: center;
+    grid-column: 2/3;
+    background-color: #edf2f4;
+    border: solid;
+}
+main {
+    background-color: #EDF2F4;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+}
+
+main section {
+    text-decoration: none;
+    border: solid;
+    padding: 40px;
+    margin: 10px
+}
+.company-spotlights {
+    grid-column: 1/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color: #de1a1a;
+    color: #fff;
+    padding: 20px 0;
+    margin: 0 auto;
+    text-align: center;
+}
