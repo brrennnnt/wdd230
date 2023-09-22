@@ -24,20 +24,22 @@
         <h1>Brent Rothlisberger</h1>
     </header>
     <nav>
-        <ul>
-            <li class="active"><a href="#">Home</a></li>
+        <button id="menu"></button>
+        <ul class="navigation">
+            <li><a href="#" class="active">Home</a></li>
             <li><a href="chamber/index.html">Chamber</a></li>
             <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
+    <div id="mode">☑️</div>
     <main>
         <h2>Wdd 230: Web Frontend Development</h2>
         <section class="card">
             <h3>Learning Activities</h3>
-            <ul>
+            <ul class="no-bullets">
                 <li>Week 01: <a href="#">X</a></li>
-                <li>Week 02: <a href="week02/design.html">Design</a><a href="https://codepen.io/brrennnnt/pen/abPVjMX">Codepen-Hamburger</a><a href="week02/bom.html">BOM</a></li>
+                <li>Week 02: <a href="week02/design.html">Design</a> | <a href="https://codepen.io/brrennnnt/pen/abPVjMX">Codepen-Hamburger</a> | <a href="week02/bom.html">BOM</a></li>
                 <li>Week 03: <a href="#">X</a></li>
                 <li>Week 04: <a href="#">X</a></li>
                 <li>Week 05: <a href="#">X</a></li>
@@ -56,5 +58,7 @@
         <p>Last modified: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getDates.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/dark-mode.js" defer></script>
 </body>
 </html>

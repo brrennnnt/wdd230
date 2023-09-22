@@ -22,50 +22,94 @@ header {
 header img {
     margin: 25px;
 }
-nav {
-    background-color: #845a6d;
-    margin: 0 auto;
+#menu {
+    font-size: 1rem;
+	border: 1px solid rgba(0,0,0,.3);
+	padding: 3px 7px 6px;
+	background-color: #eee;
+	color: #000;
+ 	position: absolute;
+	top: 10rem;
+    left:1rem;
 }
-ul {
-    list-style-type: none;
+#menu::before {
+    content: "☰"
 }
-li a {
-    display: block;
+#menu.open::before {
+    content: "X";
 }
-nav a {
-    display: block;
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: rgba(59, 9, 26, 0.8);
     color: #fff;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
 }
-nav a:hover {
-    background-color: rgba(255,255,255, 0.2);
+.navigation li {
+	display: none;
 }
-nav .active {
-    background-color: rgba(0,0,0, 0.3);
+.navigation li a {
+	display: block;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
 }
-main {
-    background-color: #EDF2F4;
+.navigation li a:hover {
+	background-color: rgba(30, 77, 99, 0.9);
+	color: #fff;
+	font-weight: 700;
+    border: solid;
+}
+.open li {
+	display: block;
+	width: 100%;
+}
+.open li a {
+	display: block;
+}
+
+.active::before {
+	content: "-> ";
+}
+#mode {
+    position: absolute;
+    right: 1rem;
+    top: 10rem;
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 main h2 {
     text-decoration: underline;
     text-align: center;
-    color: black;
 }
 main section {
     text-decoration: none;
     border: solid;
-    padding: 40px;
-    margin: 10px
+    border-radius: 5%;
+    border-style: inset;
+    border-color: #fff;
+    margin: 5%;
+    padding: 5%;
+    background-color: rgba(30, 79, 136, 0.3);
 }
 main section h3 {
-    background-color: #3e1929;
+    background-color: rgba(59, 9, 26, 0.8);;
     color: #fff;
     border: solid;
+    border-style: inset;
+    border-color: #fff;
     border-radius: 5px;
     padding: 5px;
-    
+}
+main li a {
+    text-decoration: none;
+}
+.no-bullets {
+    list-style: none;
+}
+main li a:hover {
+    text-decoration: underline;
 }
 footer {
     background-color: #3e1929;
