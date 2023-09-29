@@ -102,6 +102,11 @@ main section h3 {
     border-radius: 5px;
     padding: 5px;
 }
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
 main li a {
     text-decoration: none;
 }
@@ -110,6 +115,38 @@ main li a {
 }
 main li a:hover {
     text-decoration: underline;
+}
+.hero img {
+    width: 100%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: 25%;
+    margin-bottom: -25%;
+    object-fit: cover;
+}
+.herolabel {
+    position: absolute;
+	top: 165px;
+	left: 90px;
+	background: radial-gradient(#fff, #eeebd3);
+	border: 1px solid rgba(0,0,0,.75);
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+    padding: 5px;
+    width: 150px;
+    height: auto;
+}
+.herolabel p {
+    margin: 0;
+	font-weight: 700;
+	font-size: 9px;
+}
+.google-maps {
+    text-align: center;
+}
+.google-maps iframe {
+    width: 300px;
+    height: 100px;
 }
 footer {
     background-color: #3e1929;
