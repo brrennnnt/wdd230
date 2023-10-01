@@ -85,7 +85,6 @@ main section {
 }
 .main-area {
     max-width: 100%;
-    max-height: auto;
 }
 .main-area picture img {
     max-width: 100%;
