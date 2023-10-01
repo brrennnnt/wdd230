@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Johns Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development Brent Rothlisberger chamber of commerce home page">
+    <meta name="author" content="Brent Rothlisberger">
+    <meta property="og:title" content="Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wmonline.com%2Fst-johns-arizona%2F&psig=AOvVaw268rvmL-tRfO33kxAIu4Ek&ust=1695348069872000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCPiU1O3NuoEDFQAAAAAdAAAAABAE">
+    <meta property="og:url" content="https://brrennnnt.github.io/wdd230/chamber">
+    <link rel="icon" href="favicon-chamber.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+</head>
+<body>
+    <header>        
+        <img src="images/profile.png" alt="profile image" width="75" height="75">
+        <h1>St. Johns Chamber of Commerce</h1></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="index.html">Chamber</a></li>
+            <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="sidebar">
+            <div class="sidebar">
+                <div id="message"></div>
+            </div>
+            <section>
+                <h2>Annual Events</h2>
+            </section>
+            <section>
+                <h2>Demographics</h2>
+            </section>
+            <section>
+                <h2>Attractions</h2>
+            </section>
+            <section>
+                <iframe src="https://calendar.google.com/calendar/embed?src=33a46af5a61bc0671c0c1b068fd29e2c3057a6d26f4cfefc29e60b2ee964a543%40group.calendar.google.com&ctz=America%2FPhoenix" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+            </section>
+        </div>
+        <div class="main-area">
+            <picture>
+                <source srcset="images/town-hall-small.webp" media="(max-width: 400px)">
+                <source srcset="images/town-hall-medium.webp" media="(max-width: 800px)">
+                <img src="images/town-hall-large.webp" alt="hero" loading="lazy" media="(max-width: 1200px)">
+            </picture>
+            <picture>
+                <source srcset="images/landscape-small.webp" media="(max-width: 400px)">
+                <source srcset="images/landscape-medium.webp" media="(max-width: 800px)">
+                <img src="images/landscape-large.webp" alt="hero" loading="lazy" media="(max-width: 1200px)">
+            </picture>
+            <picture>
+                <source srcset="images/pool-small.webp" media="(max-width: 400px)">
+                <source srcset="images/pool-medium.webp" media="(max-width: 800px)">
+                <img src="images/pool-large.webp" alt="hero" loading="lazy" media="(max-width: 1200px)">
+            </picture>
+            <picture>
+                <source srcset="images/lake-small.webp" media="(max-width: 400px)">
+                <source srcset="images/lake-medium.webp" media="(max-width: 800px)">
+                <img src="images/lake-large.webp" alt="hero" loading="lazy" media="(max-width: 1200px)">
+            </picture>
+            <picture>
+                <source srcset="images/cactus-small.webp" media="(max-width: 400px)">
+                <source srcset="images/cactus-medium.webp" media="(max-width: 800px)">
+                <img src="images/cactus-large.webp" alt="hero" loading="lazy" media="(max-width: 1200px)">
+            </picture>
+            <picture>
+                <source srcset="images/restaurant-small.webp" media="(max-width: 400px)">
+                <source srcset="images/restaurant-medium.webp" media="(max-width: 800px)">
+                <img src="images/restaurant.webp" alt="hero" loading="lazy" media="(max-width: 1200px)">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightYear"></span> - Brent Rothlisberger - WDD230></p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/days-between.js"></script>
+    <script src="../scripts/getDates.js"></script>
+</body>
+</html>

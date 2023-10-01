@@ -64,23 +64,43 @@ nav .active {
     background-color: #edf2f4;
     border: solid;
 }
+#message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #de1a1a;
+    color: #fff;
+}
 main {
     background-color: #EDF2F4;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 main section {
     text-decoration: none;
     border: solid;
     padding: 40px;
-    margin: 10px
+    margin: 10px;
+}
+.main-area {
+    max-width: 100%;
+    max-height: auto;
+}
+.main-area picture img {
+    max-width: 100%;
+    background: #000;
+    animation: fade 15s;
 }
 .company-spotlights {
     grid-column: 1/4;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+iframe {
+    width: 100%;
+    height: auto;
 }
 footer {
     background-color: #de1a1a;
