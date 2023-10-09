@@ -149,6 +149,10 @@ form input.submitBtn {
     width: 96%;
     max-width: 20rem;
 }
+form input.submitBtn:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
 
 form label.top input:required {
     border-left: grey solid 6px;
