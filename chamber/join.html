@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Johns Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development Brent Rothlisberger chamber of commerce home page">
+    <meta name="author" content="Brent Rothlisberger">
+    <meta property="og:title" content="Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.wmonline.com%2Fst-johns-arizona%2F&psig=AOvVaw268rvmL-tRfO33kxAIu4Ek&ust=1695348069872000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCPiU1O3NuoEDFQAAAAAdAAAAABAE">
+    <meta property="og:url" content="https://brrennnnt.github.io/wdd230/chamber">
+    <link rel="icon" href="favicon-chamber.ico" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/larger.css">
+</head>
+<body>
+    <header>        
+        <img src="images/profile.png" alt="profile image" width="75" height="75">
+        <h1>St. Johns Chamber of Commerce</h1></header>
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="index.html">Chamber</a></li>
+            <li><a href="../week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label class="top">Title or Position <input type="text" name="position" id="position" pattern="^[a-zA-Z -]{7,}$"></label>
+
+            </fieldset>
+            <!-- contact information -->
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label class="top">Email Address* <input type="email" name="email" id="email" placeholder="chamber@gmail.com" required></label>
+                <label class="top">Mobile Phone # * <input type="tel" name="phone" id="phone" required></label>
+                <label class="top">Business/Organization Name* <input type="text" name="organization" id="organization" required></label>
+            </fieldset>
+            <!-- membership level -->
+            <fieldset>
+                <legend>Membership</legend>
+                <label class="sbs">NP (non profit) <input type="radio" name="level" value="NP (non profit)"></label>
+                <h4>• Standard</h4>
+                <label class="sbs">Bronze $ <input type="radio" name="level" value=Bronze></label>
+                <h4>• Standard</h4>
+                <h4>• Training</h4>
+                <label class="sbs">Silver $$ <input type="radio" name="level" value="Silver"></label>
+                <h4>• Standard</h4>
+                <h4>• Training</h4>
+                <h4>• Advertising</h4>
+                <label class="sbs">Gold $$$ <input type="radio" name="level" value="Gold"></label>
+                <h4>• Standard</h4>
+                <h4>• Training</h4>
+                <h4>• Advertising</h4>
+                <h4>• Special Events</h4>
+                <h4>• Discount</h4>
+            </fieldset>
+            <!-- business/organization description -->
+            <fieldset>
+                <legend>Business/Organization Description</legend>
+                <label>Description: <textarea id="description" name="description" rows="5" cols="40" required></textarea></label>
+            </fieldset>
+            <!-- Timestamp -->
+            <input type="hidden" id="timestamp" name="timestamp">
+            <input class="submitBtn" type="submit" value="Confirm Membership">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="copyrightYear"></span> - Brent Rothlisberger - WDD230</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+    <script src="../scripts/getDates.js"></script>
+    <script src="scripts/timestamp.js"></script>
+</body>
+</html>

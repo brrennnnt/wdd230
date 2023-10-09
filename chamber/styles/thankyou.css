@@ -1,0 +1,32 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    margin: 12%;
+    margin-top: 30%;
+    padding: 3%;
+    background-color: #de1a1a;
+    color: white;
+    font-size: 15px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    background-color: #de1a1a;
+    margin: 40%;
+    margin-top: 0;
+    color: white;
+    padding: 1%;
+    border-radius: 25px;
+}
+a:hover {
+    background-color: green;
+}
+@media only screen and (min-width: 400px) {
+    h1 {
+        font-size: 30px;
+        margin-top: 12%;
+    }
+}

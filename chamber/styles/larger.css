@@ -21,4 +21,9 @@
         display: flex;
         border-width: 10px;
     }
+    form {
+        margin-left: 40%;
+        width: 100%;
+        height: auto;
+    }
 }
