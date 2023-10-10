@@ -6,7 +6,8 @@ modeButton.addEventListener("click", () => {
 		main.style.background = "#000";
 		main.style.color = "#fff";
 		modeButton.textContent = "❎";
-	} else {
+	} 
+	else {
 		main.style.background = "#fff";
 		main.style.color = "#000";
 		modeButton.textContent = "☑️";

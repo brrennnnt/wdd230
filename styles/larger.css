@@ -24,7 +24,8 @@
 	}
     #mode {
         position: absolute;
-        top: 12rem;
+        top: 20px;
+		left: 10px;
     }
     main {
         display: grid;
