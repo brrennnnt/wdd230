@@ -1,0 +1,38 @@
+{
+    "familyName" : "Johnson",
+    "move-in-date" : "10/11/2023",
+    "family-size" : "5",
+    "visited" : "yes",
+    "individual-family-members" : [
+        {
+            "name" : "Dad",
+            "gender" : "Male",
+            "birth-date" : "10/11/1967"
+        },
+        {
+            "name" : "Mom",
+            "gender" : "Female",
+            "birth-date" : "10/11/1970"
+        },
+        {
+            "name" : "Son",
+            "gender" : "Male",
+            "birth-date" : "10/11/1989"
+        },
+        {
+            "name" : "Daughter",
+            "gender" : "Female",
+            "birth-date" : "10/11/1972"
+        },
+        {
+            "name" : "Dad",
+            "gender" : "Male",
+            "birth-date" : "10/11/1968"
+        },
+        {
+            "name" : "Dad",
+            "gender" : "Male",
+            "birth-date" : "10/11/1968"
+        }
+    ]
+}
