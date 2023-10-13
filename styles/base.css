@@ -93,8 +93,17 @@ main section {
     padding: 5%;
     background-color: rgba(30, 79, 136, 0.3);
 }
-main section h3 {
+main section h3{
     background-color: rgba(59, 9, 26, 0.8);
+    color: #fff;
+    border: solid;
+    border-style: inset;
+    border-color: #fff;
+    border-radius: 5px;
+    padding: 5px;
+}
+main section h4 {
+    background-color: rgba(25, 32, 90, 0.8);
     color: #fff;
     border: solid;
     border-style: inset;
@@ -152,6 +161,10 @@ main li a:hover {
     width: auto;
     height: auto;
 }
+h4 {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #3e1929;
     color: #fff;
