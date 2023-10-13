@@ -100,7 +100,8 @@ main section h3{
     border-style: inset;
     border-color: #fff;
     border-radius: 5px;
-    padding: 5px;
+    padding: 20px;
+    margin-bottom: 5%;
 }
 main section h4 {
     background-color: rgba(25, 32, 90, 0.8);
@@ -118,9 +119,27 @@ main section h4 {
 main li a {
     text-decoration: none;
 }
-.no-bullets {
+.cards ul {
     list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
 }
+.cards a {
+    color: black;
+    margin-top: 5%;
+    text-decoration: underline;
+}
+.cards a:hover {
+    color: white;
+    background-color: rgba(59, 9, 26, 0.8);
+    border: solid;
+    border-color: white;
+    text-decoration: none;
+}
+
 main li a:hover {
     text-decoration: underline;
 }
@@ -160,9 +179,6 @@ main li a:hover {
     margin: 0;
     width: auto;
     height: auto;
-}
-h4 {
-    text-decoration: underline;
 }
 
 footer {

@@ -16,7 +16,7 @@ const displayLinks = (weeks) => {
         const weekDiv = document.createElement('div');
         weekDiv.classList.add('week'); // You can add a CSS class to style this div if needed.
 
-        const weekHeading = document.createElement('h2');
+        const weekHeading = document.createElement('h4');
         weekHeading.textContent = weekItem.week;
         weekDiv.appendChild(weekHeading);
 
