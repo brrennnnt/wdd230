@@ -1,5 +1,6 @@
 const baseURL = "https://brrennnnt.github.io/wdd230/chamber/";
 const linksURL = "https://brrennnnt.github.io/wdd230/chamber/data/members.json";
+const cards = document.querySelector('#cards');
 async function getMembers() {
     const response = await fetch(url);
     const data = await response.json();
