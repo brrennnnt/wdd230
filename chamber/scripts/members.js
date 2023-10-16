@@ -1,12 +1,13 @@
 const baseURL = "https://brrennnnt.github.io/wdd230/chamber/";
-const linksURL = "https://brrennnnt.github.io/wdd230/chamber/data/members.json";
+const membersURL = "https://brrennnnt.github.io/wdd230/chamber/data/members.json";
 const cards = document.querySelector('#cards');
+
 async function getMembers() {
-    const response = await fetch(url);
+    const response = await fetch(membersURL);
     const data = await response.json();
     displayMembers(data.members);
 }
-getMemberData()
+getMembers()
 const displayMembers = (members) => {
     members.forEach((member) => {
         let card = document.createElement('section');
@@ -17,16 +18,16 @@ const displayMembers = (members) => {
         let image = document.createElement('img');
         let membership = document.createElement('h3');
 
-        name.textContent = `Company Name: ${member.name}`;
+        name.textContent = `${member.name}`;
         address.textContent = `Address: ${member.address}`;
         phone.textContent = `Phone Number: ${member.phone}`;
         website.setAttribute('href', member.website);
         image.setAttribute('src', member.image);
         image.setAttribute('alt', `website logo for ${name}`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '340');
-        image.setAttribute('height', '440');
-        membership.textContent = document.createElement('h3');
+        image.setAttribute('width', '200');
+        image.setAttribute('height', '100');
+        membership.textContent = `Membership: ${member.membership}`;
 
         card.appendChild(name);
         card.appendChild(address);
@@ -37,4 +38,24 @@ const displayMembers = (members) => {
 
         cards.appendChild(card);
     });
+}
+
+// grid and list display
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("#cards");
+
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
+
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
+
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
 }

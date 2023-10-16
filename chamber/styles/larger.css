@@ -26,4 +26,12 @@
         width: 100%;
         height: auto;
     }
+    #cards {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    .list {
+        width: 100%;
+        height: auto;
+        margin-left: 300px;
+    }
 }
