@@ -21,29 +21,27 @@
         <h1>St. Johns Chamber of Commerce</h1>
     </header>
     <nav>
-        <ul>
+        <ul class="navigation">
             <li><a href="../index.html">Project-Home</a></li>
             <li><a href="index.html" class="active">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
         </ul>
     </nav>
-    <div id="hero">
-        <div id="hero-box">
-            <img id="hero-img" src="images/hero.jpg" alt="Teamwork makes the dream work">
-         </div>
-        <div class='button-box'>
-            <a class="join" href="join.html">Join Now</a>
-        </div>
-    </div>
+
     <main>
+        <div id="hero">
+            <button id="menu"></button>
+            <div id="hero-box">
+                <img id="hero-img" src="images/hero.jpg" alt="Teamwork makes the dream work">
+             </div>
+            <div class='button-box'>
+                <a class="join" href="join.html">Join Now</a>
+            </div>
+        </div>
+
         <section class="company-spotlights">
             <h2>Company Spotlights</h2>
-            <ul>
-                <li>Restaurant Favorites</li>
-                <li>Spotlight 2</li>
-                <li>Spotlight 3</li>
-            </ul>
         </section>
         <section class="curent-events">
             <h2>Current Events</h2>
@@ -55,13 +53,20 @@
         </section>
         <section class="weather">
             <h2>Weather</h2>
-            <p>need a sweater in the morning but then it gets too hot and you have to take it off and carry it around all day</p>
+            <p>The current temperature in St. Johns, AZ, is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <br><p>3-Day Forecast:<span id="forecast-container"></span></p>
         </section>
     </main>
     <footer>
-        <p>&copy; <span id="copyrightYear"></span> - Brent Rothlisberger - WDD230></p>
+        <p>&copy; <span id="copyrightYear"></span> - Brent Rothlisberger - WDD230</p>
         <p>Last modified: <span id="lastModified"></span></p>
     </footer>
     <script src="../scripts/getDates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="../scripts/hamburger.js"></script>
 </body>
 </html>
