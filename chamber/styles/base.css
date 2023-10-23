@@ -27,7 +27,11 @@ nav {
     margin: 0 auto;
 }
 nav ul {
-    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li {
+    flex: 1 1 100%;
 }
 nav li a {
     display: block;
